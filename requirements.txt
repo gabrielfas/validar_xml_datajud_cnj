@@ -1,0 +1,5 @@
+glob2
+SQLAlchemy
+psycopg2
+pandas
+requests
