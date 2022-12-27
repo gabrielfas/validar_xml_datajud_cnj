@@ -1,5 +1,7 @@
-# validar_xml_datajud_cnj
-Projeto criado para validar o XML de processos enviados ao CNJ usando a API de validação do DATAJUD
+# Validar envio XML DATAJUD-CNJ
+Projeto criado para validar o XML de processos enviados ao CNJ usando a API de validação do DATAJUD.
+
+Serão validados arquivos XML de processos no validador do próprio CNJ, afim de validar com relação a estrutura do XML, assim como os valores semânticos dos parâmetros passados nas tags.
 
 ## Como executar
 
@@ -9,7 +11,7 @@ Primeiramente é necessário acessar a pasta "config" e inserir nos arquivos .tx
 * credenciais.txt - Colocar as credenciais do banco onde serão inseridos os dados da validação, no seguinte padrão *USUARIO;SENHA;SERVIDOR;BANCO*
 * reprocessar.txt - Preencher apenas caso queria reprocessar algum processo, senão, deixar vazio mesmo. Caso queira reprocessar, basta colocar os números dos processos separados pela quebra de linha
 
-Realizada a configuração dos arquivos, basta executar, o arquivo. É possivel passar como parametro no comando de execução o valor 1, caso queira deletar todos os dados inseridos nas tabelas do banco que irão armazenar o retorno da validação, caso não passe nada o programa irá inserir junto aos dados já existentes nas tabelas.
+Realizada a configuração dos arquivos, basta executar, o arquivo. É possivel passar como parâmetro no comando de execução o valor 1, caso queira deletar todos os dados inseridos nas tabelas do banco que irão armazenar o retorno da validação, caso não passe nada o programa irá inserir junto aos dados já existentes nas tabelas.
 
 ## Observações
 
